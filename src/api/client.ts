@@ -27,7 +27,7 @@ export interface Signal {
   status: 'active' | 'closed';
   current?: number; // текущая цена (для графика)
   pnl_pct?: number; // итог по закрытым
-  created_at: string;
+  created_at?: string;
   note?: string;
 }
 

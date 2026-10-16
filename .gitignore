@@ -1,0 +1,23 @@
+# Зависимости и сборка
+node_modules
+dist
+.vite
+
+# Окружение
+.env
+.env.local
+.env.*.local
+
+# Логи и мусор ОС
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Редакторы
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Vercel
+.vercel

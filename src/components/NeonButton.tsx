@@ -76,7 +76,7 @@ export default function NeonButton({
 
   return (
     // reducedMotion="never": эффект нажатия и ripple видны, даже если в системе отключены анимации
-    <MotionConfig reducedMotion="never">
+    <MotionConfig reducedMotion={typeof window !== "undefined" && window.innerWidth < 768 ? "always" : "never"}>
       <motion.button
         type="button"
         whileTap={{ scale: 0.96 }}

@@ -28,7 +28,7 @@ createRoot(document.getElementById('root')!).render(
     <HashRouter>
       <QueryClientProvider client={queryClient}>
         {/* reducedMotion="never" — анимации работают всегда, даже если в Windows включён reduce motion */}
-        <MotionConfig reducedMotion="never">
+        <MotionConfig reducedMotion={typeof window !== "undefined" && window.innerWidth < 768 ? "always" : "never"}>
           <App />
         </MotionConfig>
       </QueryClientProvider>

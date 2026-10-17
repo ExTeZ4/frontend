@@ -131,7 +131,7 @@ export default function Profile() {
         fullWidth
         variant="ghost"
         icon={<Megaphone className="h-4 w-4 text-brand-white" />}
-        onClick={() => openTelegramLink('https://t.me/NebulaSignalsChannel')}
+        onClick={() => openTelegramLink('https://t.me/NebulaSignalsNews')}
       >
         Наш канал
       </NeonButton>

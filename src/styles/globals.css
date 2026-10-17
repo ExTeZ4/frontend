@@ -158,3 +158,13 @@
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
+
+/* Nebula Signals v9: mobile animation budget */
+@media (max-width: 767px) {
+  .animate-pulse,
+  .animate-spin,
+  .animate-ping,
+  .animate-bounce {
+    animation: none !important;
+  }
+}

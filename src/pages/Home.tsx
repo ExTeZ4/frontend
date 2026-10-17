@@ -9,7 +9,7 @@ import { useTelegram } from '@/hooks/useTelegram';
 import { useUserStore } from '@/store/user';
 import { PLAN_LABEL, fmtDay } from '@/api/client';
 
-const CHANNEL_URL = 'https://t.me/NebulaSignalsChannel';
+const CHANNEL_URL = 'https://t.me/NebulaSignalsNews';
 
 export default function Home() {
   const user = useUserStore((s) => s.user);
@@ -108,9 +108,7 @@ export default function Home() {
         onClick={() => openTelegramLink(CHANNEL_URL)}
         className="flex w-full items-center justify-center gap-2 py-4 text-sm text-ink-muted"
       >
-        <Megaphone className="h-4 w-4 text-brand-white" />
-        Наш канал: @NebulaSignalsChannel
-      </button>
+        <Megaphone className="h-4 w-4 text-brand-white" /><a href="https://t.me/NebulaSignalsNews" target="_blank" rel="noopener noreferrer">Наш канал: @NebulaSignalsNews</a></button>
     </div>
   );
 }

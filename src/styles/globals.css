@@ -168,3 +168,15 @@
     animation: none !important;
   }
 }
+
+/* v10: keep animated backgrounds inexpensive on small screens */
+@media (max-width: 767px) {
+  .starfield-shooting-star, .shooting-star, .shootingStar, .nebula-heavy-animation {
+    animation: none !important;
+    transition: none !important;
+  }
+  .transition-all, .transition-transform, .transition-opacity {
+    transition-duration: 150ms !important;
+  }
+}
+
